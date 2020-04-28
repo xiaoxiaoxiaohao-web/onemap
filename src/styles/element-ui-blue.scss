@@ -1,0 +1,715 @@
+/* message 字体大小 */
+.el-message {
+  font-size: 22px;
+}
+//头部下拉
+.top-select{
+  width: 112px;
+  background: #293C98;
+  border: none;
+}
+.top-select .el-dropdown-menu__item,.top-select .el-dropdown-menu--small .el-dropdown-menu__item{
+  padding: 0;
+}
+.top-select .el-dropdown-menu__item{
+  width: 95%;
+  margin: 0 auto;
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+  font-size:14px;
+  font-family:'Microsoft YaHei';
+  color: #D6DDFD;
+}
+.top-select .el-popper .popper__arrow {
+  border-bottom-color: rgba(79, 110, 255, 0.85) !important;
+  filter: drop-shadow(0 2px 0.12rem rgba(79, 110, 255, 0.85));
+}
+.top-select .popper__arrow::after{
+  border-bottom-color: #293C98 !important;
+}
+.top-select li:hover {
+  background-color: #354DBD !important;
+  color: #D6DDFD !important;
+}
+.top-menu span{
+  display: block;
+  width: 100%;
+  height: 95%;
+  font-size:16px;
+  font-family:'Microsoft YaHei';
+  color: white;
+}
+.el-dropdown-menu li {
+  border-radius: 4px;
+  &.actived {
+    background-color: #354dbd !important;
+    color: #d6ddfd !important;
+  }
+}
+//头部下拉完
+
+// 侧边栏溢出不显示滚动条
+.el-aside{
+  overflow: visible;
+}
+// 搜索输入框样式
+.search-div .el-input--small .el-input__inner{
+  background: transparent;
+  border: 0;
+  color: white;
+}
+// 数据--折叠面板样式
+// 最外层
+.tree-content .el-collapse {
+  border: 0;
+}
+// 头部
+.tree-content .el-collapse-item__header{
+  height: 36px;
+  padding-left: 20px;
+  background: transparent;
+  border: none;
+  border-left: 4px solid transparent;
+  color: #a0ade2;
+  transition: all .3s;
+}
+// 头部
+.el-collapse-item__header.is-active{
+  color: white;
+  background-color: #192870;
+  border-left: 4px solid #21BDCA;
+}
+// 鼠标放置颜色
+.tree-content .el-collapse-item__header:hover {
+  color: aquamarine;
+}
+// 内容展示
+.tree-content .el-collapse-item__wrap {
+  background: transparent;
+  border: 0;
+}
+.tree-content .el-collapse-item__content {
+  padding:0;
+  color: #a0ade2;
+}
+// 数据--树样式-----------------------
+.el-tree {
+  background-color: transparent;
+  color: #a0ade2;
+}
+// 鼠标放置事件
+.el-tree-node__content:hover {
+  color: white;
+  background-color: transparent;
+}
+.is-current {
+  background-color: transparent;
+}
+// 树的高度不固定
+.el-tree-node__content {
+  height: auto;
+}
+// 选中不再变成白色
+.el-tree-node:focus > .el-tree-node__content {
+  background-color: transparent;
+  color: white;
+}
+// 登录界面输入框
+.login-body .el-input--small .el-input__inner {
+  height: 45px;
+  line-height: 45px;
+  border: 0;
+  border-bottom: 1px solid rgba(67, 76, 218, 0.5);
+  border-radius: 0;
+}
+.login-body .el-input--small .el-input__inner:focus {
+  border-bottom: 1px solid #434CDA;
+  color: #434CDA;
+}
+// 树checked-box样式
+.el-checkbox .el-checkbox__inner {
+  background-color: transparent;
+  border: 1px solid #7C91ED;
+}
+// 树可选内容样式
+.el-tree-node__content .el-checkbox + span{
+  color: white;
+}
+.el-tree-node__content .el-checkbox .el-checkbox__inner {
+  border-color: white;
+}
+// 树不能选择
+.el-tree-node__content .is-disabled + span{
+  color: #A1AEE4;
+}
+.el-tree-node__content .is-disabled .el-checkbox__inner{
+  border:none;
+  background-color:#525F9D;
+}
+// 树已经选择 + 背景
+.el-tree-node__content .is-checked + span{
+  color: #FFB400;
+}
+.el-tree-node__content .is-checked .el-checkbox__inner {
+  background-color: #FFB400;
+  border-color: #FFB400;
+}
+// 树半选 + 背景
+.el-tree-node__content .is-indeterminate .el-checkbox__inner {
+  background-color: transparent;
+  border-color: #7C91ED;
+}
+// 核地类样式开始************************************
+/* 设置滚动条的样式 */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+/* 滚动槽 */
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 6px;
+}
+/* 滚动条滑块 */
+::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  background: #0a2d5a;
+  -webkit-box-shadow: inset 0 0 6px rgba(22, 241, 241, 0.5);
+  box-shadow: inset 0 0 6px rgba(22, 241, 241, 0.5);
+}
+::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(22, 241, 241, 0.5);
+}
+.el-scrollbar__wrap {
+  overflow-x: hidden;
+}
+.HDLTool-body .el-table__header .has-gutter th {
+  background: #121C4F;
+  color: white;
+  padding: 10px 0px;
+}
+/* 内容颜色 */
+.HDLTool-body .el-table th,.HDLTool-body .el-table td {
+  background: white;
+  color: #605F60;
+}
+.HDLTool-body .el-table {
+  max-width: none;
+  /* background: transparent; */
+  color: #91e2ff;
+  border: 0px;
+  text-align: center;
+}
+/* 表格线 */
+.HDLTool-body .el-table td,
+.HDLTool-body .el-table th.is-leaf {
+  border-bottom: 1px solid #605F60 !important;
+  text-align: center !important;
+  border-left: 1px solid #605F60 !important;
+}
+.HDLTool-body .el-table td {
+  padding: 7px 0px !important;
+}
+/* 表格边距 */
+.HDLTool-body .el-table .cell {
+  padding: 0px !important;
+}
+/* 表格高亮控制 */
+.HDLTool-body .el-table__body .current-row td{
+  background-color: #aaecf7 !important;
+}
+.HDLTool-body .is-decoration .el-table__body .current-row td{
+  text-decoration-line: underline;
+  cursor: pointer;
+}
+.HDLTool-body .el-table__body .el-table__row:hover > td{
+  background-color: #81e3f1 !important;
+}
+.HDLTool-body .el-table__expanded-cell {
+  display: none;
+}
+/* // 表头控制 */
+.HDLTool-body .has-gutter th {
+  border-right: 1px solid #016d7d;
+}
+/* // 右边边框消除 */
+.HDLTool-body .el-table--border::after,
+.HDLTool-body .el-table--group::after {
+  width: 0;
+}
+/* // 底部边框消除 */
+.HDLTool-body .el-table::before {
+  width: 1px solid #605F60 !important
+}
+/* 表格背景颜色控制 */
+.HDLTool-body .el-table .agricultural-row td{
+  background: #f0fbff;
+}
+.HDLTool-body .el-table .building-row td{
+  background: #fff3f5;
+}
+
+/* 弹框样式 */
+.el-dialog__wrapper .el-dialog {
+  height: 100%;
+  margin-top: 0px !important;
+  margin: 0 auto;
+  position: relative;
+  background-color: transparent;
+}
+.el-dialog,
+.el-pager li {
+  background: transparent;
+}
+.el-dialog__header {
+  display: none;
+}
+.el-dialog__wrapper .el-dialog__body {
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+body .el-popover {
+  z-index: 3000 !important;
+}
+/* 按钮间距 */
+.option-bottom .el-button {
+  margin-left: 10px !important;
+  min-width: 78px;
+
+}
+/* 输入框 */
+.bottom-top-input-div .el-input {
+  width: auto;
+}
+.bottom-top-input-div  .el-input__inner {
+  height: 30px;
+  line-height: 30px
+}
+.top-title .el-input {
+  width: 300px;
+}
+/* 表格表头取消显示 */
+.hide-table-header .el-table__header-wrapper {
+  display: none;
+}
+/* arcgis指北针样式,修改平面的与3D的相同 */
+.esri-compass .esri-icon-dial:before {
+  content: "\e680";
+}
+.is-header-card .esri-ui-top-right {
+  right: 35px;
+}
+/* 导出的地图修改内容 */
+#exportArcgisId .esri-ui-top-left {
+  display: none;
+}
+#exportArcgisId .esri-ui-manual-container>.esri-component {
+  display: none;
+}
+.map-spvisible .esri-ui-manual-container>.esri-component {
+  display: none;
+}
+.option-top .el-input--small .el-input__inner {
+  height: 32px !important;
+}
+// 核地类样式结束************************************
+.el-popper[x-placement^=bottom] .popper__arrow {
+  border-bottom-color: rgba(79,110,255,.85) !important;
+}
+.user-drop-menu .popper__arrow::after,
+.user-drop-menu .el-popper[x-placement^=bottom] .popper__arrow::after
+{
+  border-bottom-color:rgba(79,110,255,.85) !important;
+}
+.data-resource .el-tree {
+  padding: 10px 20px;
+}
+// 空间分析样式开始********************
+.child-content .el-checkbox {
+  margin-right: 0px;
+}
+.child-content .el-checkbox:not(:nth-of-type(3n)){
+  margin-right: 10px;
+}
+.child-content .el-checkbox__label {
+  font-size: 12px;
+  padding-left: 5px;
+}
+//*****表格样式*********
+.SA-result .table-content .cell{
+  font-size: 14px;
+}
+.SA-result .table-content .el-table td{
+  border: 0 !important;
+}
+.SA-result .table-content .el-table th.is-leaf {
+  border: 0 !important;
+  border-bottom: 1px solid #E1E1E1 !important;
+}
+.SA-result .table-content .el-table__header .has-gutter th {
+  background: white;
+  color: #243896;
+  padding: 0px 0px 10px 0px;
+  border-bottom: 1px solid #E1E1E1;
+}
+.SA-result .table-content .cell {
+  text-align: center;
+}
+// 弹出内容**********
+.my-popper {
+  margin-bottom: 4px !important;
+  min-width: 100px !important;
+  border:1px solid #A9BAF7;
+  padding: 20px 10px;
+}
+.my-popper .popper__arrow {
+  display: none;
+}
+.SA-add {
+  width: 188px;
+  background: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(84, 107, 219, 1);
+  border-radius: 4px;
+  transition: all 0.3s;
+  padding: 0;
+  margin-top: 0px !important;
+}
+.child-top {
+  height: 24px;
+  line-height: 24px;
+  width: 100%;
+  background: #e1e5fa;
+  border-radius: 3px 3px 0px 0px;
+  color: #546bdb;
+  font-size: 12px;
+  text-align: center;
+}
+.child-content {
+  padding: 12px 10px;
+}
+// 空间分析样式结束********************
+//公共查询
+.QueryTime-cont li .el-checkbox__label{
+  color:#A1AEE4;
+}
+.QueryTime-cont .el-checkbox__input.is-checked+.el-checkbox__label {
+  color:#fff;
+}
+.Query-data .el-input--small .el-input__inner {
+  background: #1A2E85;
+  color:rgba(161,174,228,1);;
+}
+.Query-data .el-date-editor{
+  width: 156px;
+}
+.Query-data .Query-start .el-date-editor{
+  margin-left: 10px;
+}
+.Query-data .Query-end .el-date-editor{
+  margin-left: 0;
+}
+.QueryHand-ul li .el-input--small .el-input__inner{
+  background: #1B2E85;
+}
+.QueryHand-ul li .el-select{
+  height: 100%;
+}
+.QueryHand-ul li .el-input--small,.QueryHand-ul li .el-input__inner{
+  height: 28px;
+  line-height: 28px;
+  color:#A1AEE4;
+}
+.QueryHand-ul li .el-input__prefix,.QueryHand-ul li .el-input__suffix{
+  top: 2px;
+}
+.searchInput .el-select{
+  height: 28px;
+  line-height: 28px;
+  width: 100%;
+}
+.searchInput .el-input--small .el-input__inner{
+  height: 28px;
+  line-height: 28px;
+}
+.searchInput .el-input__inner{
+  background-color: #17235d;
+  border: none;
+  padding: 0;
+  width: 96%;
+  margin-left: 2%;
+  color: #a1aee4;
+} 
+// 全局样式
+.el-select-dropdown__wrap{
+  max-height: 1.8rem;
+}
+.QueryTime-cont .el-checkbox{
+  margin-top: 10px;
+}
+.AreaUpload-cont .upload-demo,.AreaUpload-cont .el-upload,.AreaUpload-cont button{
+  width: 100%;
+  height: 100%;
+}
+.AreaUpload-cont button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border: none;
+}
+.AreaUpload-cont button span{
+  font-size:12px;
+  font-family:'Microsoft YaHei';
+  color: white;
+  display: block;
+  position: absolute;
+}
+.paginationPage .el-pagination .btn-prev,.paginationPage .el-pagination .btn-next,.paginationPage ul li{
+  background: none;
+}
+.paginationPage .el-pager li{
+  padding: 0;
+  min-width: 25.5px;
+}
+.query-panel-choose .el-popover{
+  padding: 12px 0;
+  bottom:8%;
+  width: 80%;
+  margin-left: 10%;
+}
+.query-panel-choose .el-popover>p{
+  color: #808080;
+}
+.query-panel-choose .el-popover button:nth-child(1){
+  width: 25%;
+  height: 35px;
+  margin: 0 0 0 -2%;
+}
+.query-panel-choose .el-popover button:nth-child(2){
+  width: 25%;
+  height: 35px;
+  margin: 0 0 0 8%;
+}
+.query-panel-result .el-icon-loading{
+  position: absolute;
+  top: 50%;
+  font-size: 20px;
+}
+.query-panel-result .loading-class{
+  height: 85%;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+// 公共查询样式结束********************
+
+//国土空间规划分析评价(左侧)
+.TPE-aside .el-menu{
+  border-right: none;
+  background: #293C98 !important;
+}
+.TPE-aside .el-submenu__title span{
+  font-size:14px;
+  font-family:'Microsoft YaHei';
+  color:#C6D1FF;
+}
+.TPE-aside .el-menu-item-group__title{
+  padding: 0;
+}
+.TPE-aside .el-submenu__title,.TPE-aside .el-menu-item{
+  background: none !important;
+}
+.TPE-aside .el-menu-item{
+  width: 65%;
+  margin: 0 auto;
+  border-radius:5px;
+  min-width: 0;
+  height: 38px;
+  line-height: 38px;
+  text-align: left;
+  padding-right:15px;
+  padding-left: 15px !important;
+  color: #A1AEE4 !important;
+}
+.TPE-aside .el-icon-arrow-down:before{
+  color:white;
+}
+.TPE-aside .el-col-24 {
+  padding-top: 20px;
+}
+.TPE-aside .el-menu-item i{
+  margin-right: 4.5%;
+}
+.TPE-aside .el-menu-item:hover{
+ background: #21BDCA !important;
+ color: white !important;
+ .i-actived {
+  color: white;
+   }
+}
+//国土空间规划分析评价(左侧)完
+
+//国土空间规划分析评价(说明图表)开始
+.ResultsShow .el-table thead.is-group th{
+  background: #f8f9fd;
+}
+.ResultsShow .el-table td,.ResultsShow .el-table th.is-leaf{
+  border-bottom: 1px solid #dbdbdb !important;
+  text-align: center !important;
+  border-left: 1px solid #dbdbdb !important;
+}
+.ResultsShow .has-gutter th{
+  border-right: 1px solid #dbdbdb !important;
+}
+.ResultsShow .cell{
+  color: #555555;
+  text-align: center;
+}
+.ResultsShow .el-table{
+  height: 100% !important;
+  overflow-x: hidden;
+}
+.ResultsShow .el-table__body{
+  height: 100%;
+}
+.ResultsShow .el-table tr{
+ width: 100%;
+}
+.ResultsShow .el-table__header{
+ border: 1px solid #dbdbdb;
+ border-bottom: none;
+}
+.ResultsShow .has-gutter th{
+  border: none !important;
+}
+.ResultsShow .el-table thead.is-group th{
+  border-bottom: 1px solid #dbdbdb !important;
+  border-right: 1px solid #dbdbdb !important;
+}
+.ResultsShow .el-table--border td{
+  border-right:none;
+}
+.ResultsShow .gutter{
+  display: none !important;
+}
+.ResultsShow .is-group{
+  width: 100% !important;
+}
+.ResultsShow .el-table__header-wrapper{
+  width: 100%;
+}
+.ResultsShow  .el-table--border,.ResultsShow .el-table--group{
+  border: none !important;
+}
+.ResultsShow .el-table--enable-row-hover .el-table__body tr:hover>.el-table_1_column_1_column_2{
+  background: none !important;
+}
+.ResultsShow .is-group tr:nth-child(2) th{
+  border-left: none !important;
+}
+// 表格x轴的滚动条关闭
+// .ResultsShow .el-table--scrollable-x .el-table__body-wrapper{
+//   overflow-x: hidden;
+// }
+::-webkit-scrollbar-thumb{
+  background: none;
+}
+// IE表格滚动条隐藏
+html{
+  -ms-overflow-style:none;
+}
+// Chrome表格滚动条颜色修改
+.ResultsShow .el-table__body tbody::-webkit-scrollbar-thumb{
+  background: #bfbfbf !important;
+}
+
+//国土空间规划分析评价(说明图表)结束
+
+//国土空间规划分析评价(地图)开始
+.TP-evaluate-left .el-input__inner {
+  background-color: transparent;
+  color: white;
+  border: 0px;
+}
+// 顶部三角形
+.TP-evaluate-select .popper__arrow{
+  display: none;
+}
+.TP-evaluate-select{
+  margin-top: 0px !important;
+  border-radius: 0px ;
+  background-color: #434F88;
+  color: white ;
+  border:1px solid rgba(93,125,236,1);
+  width: 98px;
+}
+.TP-evaluate-select .el-select-dropdown__item.hover,
+.TP-evaluate-select .el-select-dropdown__item:hover {
+  background-color: #89A5FF;
+}
+.TP-evaluate-select .el-select-dropdown__item {
+  color: #D6DDFD;
+}
+// 表格*******************
+.explain .el-table .cell,
+.explain .el-table th div{
+  padding: 0;
+  padding-left: 0 !important;
+  text-align: center;
+}
+// 地图单选框***************
+.export-map-win .el-radio {
+  width: 140px;
+  padding-top: 10px;
+}
+.export-map-win .el-input--small .el-input__inner {
+  height: 24px;
+  line-height: 24px;
+}
+.export-map-win .el-checkbox__input.is-disabled.is-checked .el-checkbox__inner {
+  background-color: #409EFF;
+  border-color: #409EFF;
+}
+.export-map-win .el-checkbox__input.is-disabled+span.el-checkbox__label {
+  color: #409EFF;
+}
+//国土空间规划分析评价(地图)结束
+//国土空间规划分析评价数据table表格start
+.dataShow thead{
+  color:#333333;
+  font-size: 14px;
+  font-family: 'MicrosoftYaHei';
+  font-weight:400 !important;
+}
+.dataShow .no-right-border{
+  border-right: none;
+}
+.dataShow .no-bottom-border{
+  border-bottom: none;
+}
+.dataShow  .cell{
+  text-align: center;
+}
+.dataShow .no-right-border:nth-child(2n)>div{
+  background-color:#F0F2FB
+}
+.dataShow .no-right-border:nth-child(8)>div{
+  background-color:white
+}
+.dataShow .no-right-border:nth-child(9)>div{
+  background-color:#FFF3E0
+}
+.dataShow .no-height:nth-child(2){
+  display: none;
+}
+.dataShow .el-table__body tr:hover>td {
+  background-color: white !important;
+}
+//国土空间规划分析评价数据table表格end
+
+
+

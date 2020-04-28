@@ -1,0 +1,31 @@
+
+/* color */
+
+$second-level-color:#A1AEE4;
+$alpha-backgroud-color: rgba(32, 50, 140, 0.9); /*半透明紫色背景色*/
+
+/* placeholder */
+
+$placeholder-color: $second-level-color;
+@mixin placeholder {
+  &::-webkit-input-placeholder {
+    color: $placeholder-color;
+  }
+  &::-moz-input-placeholder {
+    color: $placeholder-color;
+  }
+  &::-ms-input-placeholder {
+    color: $placeholder-color;
+  }
+}
+
+/* header */
+
+$header-backgroud-color: #14236A;
+
+/* aside */
+
+$aside-backgroud-color:#293C98;
+
+
+/* element-ui */

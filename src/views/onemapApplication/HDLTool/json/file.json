@@ -1,0 +1,183 @@
+{
+  "examineList": {
+    "batchName": "中山市金字山互通立交工程",
+    "unit": "中山市地方公路管理总站",
+    "location": "五桂山镇长命水村、东区亨尾村",
+    "area": "14.9398公顷",
+    "landNum": "金字山互通立交工程-001（D29AAd20198085） 金字山互通立交工程-002（D29AAd20198086） 金字山互通立交工程-003（D29AAd20198087） 金字山互通立交工程-004（D29AAd20198101） 金字山互通立交工程-005（D29AAd20198102） 金字山互通立交工程-006（D21AAd20198080） 金字山互通立交工程-007（D21AAd20198081） 金字山互通立交工程-008（D29AAd20198120）",
+    "drawingNum": "已发集体所有权证：D29AAd20198085 D29AAd20198086 D29AAd20198087 D29AAd20198101 D29AAd20198102 D21AAd20198080 D21AAd20198081       已报批：D29AAd20198120",
+    "purpose": "交通运输用地"
+  },
+  "proveList": [
+    {
+      "num": "1",
+      "unit": "何志伟",
+      "location": "板芙镇",
+      "area": "120",
+      "drawingNum": "D30VVa20190144",
+      "year": "核2017年地类",
+      "buildLandNum": "203",
+      "buildLandName": "村庄",
+      "buildLandArea": "13.7",
+      "generalFarmlandNum": "",
+      "generalFarmlandName": "",
+      "generalFarmlandArea": "",
+      "withKFarmlandNum": "021",
+      "withKFarmlandName": "果园",
+      "withKFarmlandArea": "106.3",
+      "cultivatedLandNum": "",
+      "cultivatedLandName": "",
+      "cultivatedLandArea": "",
+      "specialLandNum": "",
+      "specialLandName": "",
+      "specialLandArea": ""
+    },
+    {
+      "num": "2",
+      "unit": "郭丽芳",
+      "location": "板芙镇",
+      "area": "120",
+      "drawingNum": "D30VVa20190143",
+      "year": "核2017年地类",
+      "buildLandNum": "203",
+      "buildLandName": "村庄",
+      "buildLandArea": "45.2",
+      "generalFarmlandNum": "",
+      "generalFarmlandName": "",
+      "generalFarmlandArea": "",
+      "withKFarmlandNum": "021",
+      "withKFarmlandName": "果园",
+      "withKFarmlandArea": "74.8",
+      "cultivatedLandNum": "",
+      "cultivatedLandName": "",
+      "cultivatedLandArea": "",
+      "specialLandNum": "",
+      "specialLandName": "",
+      "specialLandArea": ""
+    },
+    {
+      "num": "3",
+      "unit": "中山翠亨新区湘建环岛路项目建设有限公司",
+      "location": "翠亨新区",
+      "area": "2943.2",
+      "drawingNum": "D25ZUd20191005",
+      "year": "核2015年地类",
+      "buildLandNum": "203",
+      "buildLandName": "村庄",
+      "buildLandArea": "45.2",
+      "generalFarmlandNum": "",
+      "generalFarmlandName": "",
+      "generalFarmlandArea": "",
+      "withKFarmlandNum": "",
+      "withKFarmlandName": "",
+      "withKFarmlandArea": "",
+      "cultivatedLandNum": "011",
+      "cultivatedLandName": "水田",
+      "cultivatedLandArea": "691",
+      "specialLandNum": "",
+      "specialLandName": "",
+      "specialLandArea": ""
+    }
+  ],
+  "proveList2": [
+    {
+      "num": "1",
+      "unit": "何志伟",
+      "location": "板芙镇",
+      "area": "120",
+      "drawingNum": "D30VVa20190144",
+      "year": "核2017年地类",
+      "threeType": [
+        {
+          "area": "82864.89631887",
+          "lands": [
+            {
+              "area": "42190.00329824",
+              "typeName": "城市",
+              "typeCode": "201"
+            }
+          ],
+          "type": "建设用地"
+        },
+        {
+          "area": "28172.9321637",
+          "lands": [
+            {
+              "area": "24421.42878192",
+              "typeName": "水浇地",
+              "typeCode": "012"
+            },
+            {
+              "area": "2677.23232466",
+              "typeName": "沟渠",
+              "typeCode": "117"
+            }
+          ],
+          "type": "一般农用地"
+        },
+        {
+          "area": "0",
+          "lands": [],
+          "type": "带K可调整农用地"
+        },
+        {
+          "area": "0",
+          "lands": [],
+          "type": "耕地"
+        },
+        {
+          "area": "0",
+          "lands": [],
+          "type": "未利用土地"
+        }
+      ]
+    },
+    {
+      "num": "2",
+      "unit": "何志伟",
+      "location": "板芙镇",
+      "area": "120",
+      "drawingNum": "D30VVa20190144",
+      "year": "核2017年地类",
+      "threeType": [
+        {
+          "area": "82864.89631887",
+          "lands": [
+            {
+              "area": "40674.89302063",
+              "typeName": "建制镇",
+              "typeCode": "202"
+            }
+          ],
+          "type": "建设用地"
+        },
+        {
+          "area": "28172.9321637",
+          "lands": [
+            {
+              "area": "1074.27105712",
+              "typeName": "果园",
+              "typeCode": "021"
+            }
+          ],
+          "type": "一般农用地"
+        },
+        {
+          "area": "0",
+          "lands": [],
+          "type": "带K可调整农用地"
+        },
+        {
+          "area": "0",
+          "lands": [],
+          "type": "耕地"
+        },
+        {
+          "area": "0",
+          "lands": [],
+          "type": "未利用土地"
+        }
+      ]
+    }
+  ]
+}

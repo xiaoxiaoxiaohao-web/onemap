@@ -1,0 +1,62 @@
+<!--
+ * @Description: In User Settings Edit
+ * @Author: your name
+ * @Date: 2019-09-06 09:59:43
+ -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
+    <title>新城区国土空间规划资源一张图管理平台</title>
+    <link rel="stylesheet" href="static/font/style.css" />
+    <script type="text/javascript" src="static/config/Global.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="static/Map3D/SuperMap/Cesium/Widgets/widgets.css"
+    />
+    <script type="text/javascript" src="static/config/Map3DConfig.js"></script>
+    <script
+      type="text/javascript"
+      src="static/Map3D/SuperMap/Cesium/Cesium.js"
+    ></script>
+  </head>
+
+  <body>
+    <noscript>
+      <strong
+        >对不起，您的浏览器不支持脚本，请开启该功能或更新新版浏览器</strong
+      >
+    </noscript>
+    <div id="app"></div>
+    <script>
+      // 加载arcgis的js和css
+      var init = document.createElement('script')
+      init.setAttribute(
+        'src',
+        window.arcgisUrl + '/arcgis_js_api/library/4.12/init.js'
+      )
+      var script = document.head.append(init)
+
+      var claro = document.createElement('link')
+      claro.setAttribute(
+        'href',
+        window.arcgisUrl + '/arcgis_js_api/library/4.12/dijit/themes/claro/claro.css'
+      )
+      claro.setAttribute('rel', 'stylesheet')
+      var link1 = document.head.append(claro)
+
+      var main = document.createElement('link')
+      main.setAttribute(
+        'href',
+        window.arcgisUrl + '/arcgis_js_api/library/4.12/esri/themes/light/main.css'
+      )
+      main.setAttribute('rel', 'stylesheet')
+      var link2 = document.head.append(main)
+    </script>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
